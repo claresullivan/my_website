@@ -1,8 +1,7 @@
-//My Lab 1
+//MegaCities
 
 
 //initialize map and use coordinates to set the view
-//Need to adjust the zoom and view
 //define function
 function createMap(){
     //create the map
@@ -26,7 +25,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //function to retrieve the data and place it on the map
 function getData(map){
     //load the data
-    $.ajax("data/COL_slaughterhouse_geocoded.geojson", {
+    $.ajax("data/MegaCities_geocoded.geojson", {
         dataType: "json",
         success: function(response){
             //create marker options
